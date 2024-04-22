@@ -73,7 +73,7 @@ header {
     align-items: center;
     box-shadow: 5px 5px 5px #000000;
 }
-.header__menu ul a {
+.header__menu ul li {
     text-decoration: none;
     color: #000000;
     font-size: 20px;
@@ -84,7 +84,7 @@ header {
     cursor: pointer;
 }
 
-.header__menu ul a:hover{
+.header__menu ul li a:hover{
     color: #160ef4;
 }
 
