@@ -1,0 +1,39 @@
+.terms_of_return {
+    background-color: #f0fff0;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+.terms_of_return h2 {
+    padding-top: 1.5em;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    font-family: 'OpenSans_bold';
+}
+.terms_of_return p {
+    color: #000000;
+    font-size: 24px;
+    font-family: 'OpenSans_semibold';
+    margin-bottom: 2em;
+}
+
+.terms_of_return p:nth-child(2){
+    margin-top: 2em;
+}
+
+@media screen and (max-width:992px) {
+   .terms_of_return h2 {
+    font-size: 24px;
+   }
+   .terms_of_return p {
+    font-size: 18px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .terms_of_return p {
+        text-align: justify;
+    }
+}

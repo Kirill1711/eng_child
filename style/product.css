@@ -1,0 +1,247 @@
+.product {
+    width: 100%;
+    height: 100%;
+    background-color: #bceae8;
+    padding-bottom: 1em;
+}
+
+.product__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0 2em 0;
+}
+.product__item h2 {
+    color: #000000;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: 'OpenSans_bold';
+}
+.product__item p {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'OpenSans_bold';
+}
+
+.item__wrapper {
+    margin: 2em 0 2em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+}
+.item__wrapper img {
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 5px 5px #000000;
+}
+
+.item__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item__price img {
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+    margin-left: 15px;
+}
+.item__price span {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 30px;
+    font-family: 'OpenSans_bold';
+}
+.item__price  button {
+    margin-top: 2em;
+    box-shadow: 10px 5px 5px #000000;
+    width: 300px;
+    height: 80px;
+    background-color: #f71414;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.item__price  button:hover {
+    background-color: #2403fc;
+}
+
+/*каратинки Чудословарик*/
+.product__foto {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 15px;
+    width: 850px;
+    height: 180px;
+    background-color: #f0ffff;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #000000;
+}
+.product__foto img {
+    width: 250px;
+    height: 158px;
+}
+.product__foto img:first-child {
+    margin-left: 35px;
+}
+
+/*Описание*/
+.product__discription {
+    margin: auto;
+    background-color: #d6d4f0;
+    height: 100%;
+    width: 850px;
+    border-radius: 30px;
+}
+.product__discription h2 {
+    padding-top: 1em;
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    font-family: 'OpenSans_bold';
+    text-decoration: underline;
+    margin: 2em 0 1em 0;
+}
+.product__discription p {
+    animation: 2.5s show ease;
+    transition: all 0.5s;
+    text-align: justify;
+    font-size: 22px;
+    color: #000000;
+    font-family: 'OpenSans_semibold';
+    margin: 1em 1em;
+}
+.product__discription img {
+    animation: 4s show ease;
+    transition: all 0.5s;
+    margin: 1em 1em;
+    width: 800px;
+    height: 499px;
+    box-shadow: 5px 5px 5px #000000;
+}
+.product__discription button {
+    margin: 0 auto;
+    display: block;
+    text-decoration: underline;
+    font-size: 24px;
+    padding: 1em 0;
+    color: #000000;
+    font-family: "OpenSans_italic";
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+}
+ iframe {
+    display: block;
+    margin: 0 auto;
+    width: 560px;
+    height: 315px;
+    animation: 4s show ease;
+}
+
+.show {
+    display: block;
+}
+.unshow {
+    display: none;
+}
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+@media screen and (max-width: 1200px) {
+    .item__wrapper {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product__item h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .item__wrapper img {
+        width: 400px;
+        height: 400px;
+    }
+    .item__wrapper {
+        gap: 50px;
+    }
+    .item__price img {
+        width: 40px;
+        height: 40px;
+    }
+    .product__foto {
+        width: 700px;
+        height: 180px;
+    }
+    .product__foto img {
+        width: 200px;
+        height: 126px;
+    }
+
+    .product__discription {
+        width: 700px;
+    }
+    .product__discription h2 {
+        font-size: 24px;
+    }
+    .product__discription p {
+        font-size: 16px;
+    }
+    .product__discription img {
+        width: 660px;
+        height: 430px;
+    }
+    .product__discription div {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item__wrapper {
+        flex-direction: column;
+    }
+    .item__wrapper img {
+        width: 300px;
+        height: 300px;
+    }
+    .item__price img {
+        width: 40px;
+        height: 40px;
+    }
+    .item__price button {
+        margin-top: 1em;
+    }
+    .product__foto {
+        flex-direction: column;
+        width: 300px;
+        height: 448px;
+    }
+    .product__foto img:first-child {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .product__discription {
+        width: 300px;
+    }
+    .product__discription img {
+        width: 260px;
+        height: 160px;
+    }
+    .product__discription div {
+        font-size: 18px;
+    }
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+}

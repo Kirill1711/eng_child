@@ -1,0 +1,87 @@
+/*контейнер*/
+.container {
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+}
+
+/*плавный скролинг во всем документе*/
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/*подключим стили*/
+
+@font-face {
+    font-family: 'OpenSans_bold';
+    src: local('OpenSans_bold'),
+     url('../openSans/OpenSans-Bold.ttf');
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans_light';
+    src: local('OpenSans_light'),
+    url('../openSans/OpenSans-Light.ttf');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans_medium';
+    src: local('OpenSans_medium'),
+    url('../openSans/OpenSans-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans_regular';
+    src: local('OpenSans_regular'),
+    url('../openSans/OpenSans-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans_semibold';
+    src: local('OpenSans_semibold'),
+    url('../openSans/OpenSans-SemiBold.ttf');
+    font-style: bold;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans_italic';
+    src: local('OpenSans_italic'),
+    url('../openSans/OpenSans-Italic.ttf');
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 992px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 320px;
+    }
+}
