@@ -73,7 +73,7 @@
 .product__foto {
     display: flex;
     align-items: center;
-    margin: auto;
+    margin: 1em auto;
     gap: 15px;
     width: 850px;
     height: 180px;
@@ -104,7 +104,6 @@
     font-size: 30px;
     font-family: 'OpenSans_bold';
     text-decoration: underline;
-    margin: 2em 0 1em 0;
 }
 .product__discription p {
     animation: 2.5s show ease;
