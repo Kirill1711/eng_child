@@ -5,7 +5,7 @@
     padding-bottom: 2em;
 }
 
-.terms_of_return h2 {
+.terms_of_return h2, .terms_of_return h3 {
     padding-top: 1.5em;
     text-align: center;
     font-size: 30px;
@@ -18,16 +18,24 @@
     font-family: 'OpenSans_semibold';
     margin-bottom: 2em;
 }
+.terms_of_return span {
+    color: #000000;
+    font-size: 24px;
+    font-family: 'OpenSans_semibold';
+    margin-bottom: 2em;
+    text-align: center;
+}
+
 
 .terms_of_return p:nth-child(2){
     margin-top: 2em;
 }
 
 @media screen and (max-width:992px) {
-   .terms_of_return h2 {
+   .terms_of_return h2, .terms_of_return h3 {
     font-size: 24px;
    }
-   .terms_of_return p {
+   .terms_of_return p, .terms_of_return span {
     font-size: 18px;
    }
 }

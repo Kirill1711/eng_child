@@ -4,6 +4,7 @@
     background-image: url('../img/ads/ads.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 .ads h2 {
     color: #fff;
@@ -12,6 +13,67 @@
     font-weight: 500;
     width: 500px;
     padding-top: 2em;
+}
+
+.ads div div {
+    width: 300px;
+    bottom: 1em;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.ads div div a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff0606;
+    font-family: 'OpenSans_bold';
+    cursor: pointer;
+}
+.ads div div img {
+    width: 50px;
+    height: 44px;
+    animation: move 1s ease infinite;
+}
+@keyframes move {
+    0% {
+        rotate: 0deg
+    }
+    10% {
+        rotate: 36deg
+    }
+    20% {
+        rotate: 72deg
+    }
+    30% {
+        rotate: 108deg
+    }
+    40% {
+        rotate: 144deg
+    }
+    50% {
+        rotate: 180deg
+    }
+    60% {
+        rotate: 216deg
+    }
+    70% {
+        rotate: 252deg
+    }
+    80% {
+        rotate: 288deg
+    }
+    90% {
+        rotate: 324deg
+    }
+    100% {
+        rotate: 360deg
+    }
 }
 
 @media screen and (max-width: 992px) {
