@@ -15,6 +15,34 @@ a {
     color: #000000;
 }
 
+.to_top {
+    position: sticky;
+    top: 50%;
+}
+.button_top {
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    animation: jump 1s ease-in infinite;
+}
+
+@keyframes jump {
+   0% {
+    translate: (0);
+   }
+    40% {
+    transform: translate(0px, 15px);
+    }
+
+    80% {
+    transform: translate(0px, -15px);
+    }
+
+    100% {
+    transform: translate(0);
+    }
+
+}
 /*подключим стили*/
 
 @font-face {

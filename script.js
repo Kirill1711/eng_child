@@ -28,3 +28,12 @@ for(let btn of btn_description) {
 }
 
 
+let btn_to_top = document.querySelector('.to_top');
+
+btn_to_top.addEventListener('click', function () {
+    window.scrollTo ({
+        top: 0,
+        behavior: "smooth",
+    })
+});
+
